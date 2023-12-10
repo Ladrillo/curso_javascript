@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>13. Nombrar y asignar variables con let y const</title>
+</head>
+
+<body>
+  <h1>Capítulo 13</h1>
+  <h2>Nombrar y asignar variables con let y const</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo se utilizan las palabras clave 'let' y 'const' para declarar variables en JavaScript y cuáles son sus
+      diferencias?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>Utilizar 'let' y 'const' para declarar variables es esencial en JavaScript moderno. 'let' permite declarar
+      variables que pueden cambiar su valor a lo largo del tiempo, mientras que 'const' se utiliza para declarar
+      variables cuyo valor no debería cambiar una vez asignado. Esto ayuda a escribir código más claro y predecible,
+      evitando errores comunes, como la reasignación accidental de una variable que no debería cambiar, o el uso de
+      variables fuera del ámbito en el que fueron definidas.</p>
+  </section>
+  <script>
+    console.log('13. Nombrar y asignar variables con let y const')
+    /**
+     * Ejercicio 1: Declara una variable con 'let' y asignale un valor numérico. Luego, cambia su valor a otro número.
+     * Ejemplo:
+     *   let miNumero = 10
+     *   miNumero = 20
+     */
+
+    /**
+     * Ejercicio 2: Declara una variable con 'const' y asignale un valor de cadena. Intenta cambiar su valor y observa el resultado.
+     * Ejemplo:
+     *   const miCadena = 'Hola'
+     *   miCadena = 'Adiós' // Esto generará un error.
+     */
+
+    /**
+     * Ejercicio 3: Declara una variable con 'let', asignale un valor y luego intenta redeclararla con 'let' en el mismo ámbito.
+     * Ejemplo:
+     *   let miVariable = 'original'
+     *   let miVariable = 'nuevo' // Esto generará un error.
+     */
+
+    /**
+     * Ejercicio 4: Realiza el mismo proceso del ejercicio anterior pero utilizando 'const'.
+     * Ejemplo:
+     *   const miConstante = 'inmutable'
+     *   const miConstante = 'cambio' // Esto generará un error.
+     */
+
+    /**
+     * Ejercicio 5: Declara una variable con 'let' y reasigna su valor sin problemas.
+     * Ejemplo:
+     *   let reasignable = 'inicio'
+     *   reasignable = 'modificado'
+     *   console.log(reasignable) // Esto mostrará 'modificado'.
+     */
+
+  </script>
+
+</body>
+
+</html>
