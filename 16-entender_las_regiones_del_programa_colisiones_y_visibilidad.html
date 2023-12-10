@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>16. Entender las regiones del programa, colisiones y visibilidad</title>
+</head>
+
+<body>
+  <h1>Capítulo 16</h1>
+  <h2>Entender las regiones del programa, colisiones y visibilidad</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo funcionan el ámbito de las variables, el bloqueo de código y el sombreado de variables en JavaScript?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>Comprender el ámbito de las variables y el sombreado es crucial en JavaScript para evitar errores comunes
+      relacionados con la visibilidad y el acceso a las variables. Un ámbito define la región del programa donde una
+      variable es accesible. El sombreado ocurre cuando una variable en un ámbito interno tiene el mismo nombre que una
+      variable en un ámbito externo, ocultando la variable externa.</p>
+  </section>
+  <script>
+    console.log('16. Entender las regiones del programa, colisiones y visibilidad')
+    /**
+     * Ejercicio 1:
+     * let numero = 10;
+     * {
+     *   let numero = 20;
+     *   console.log(numero); // ¿Qué valor muestra?
+     * }
+     * console.log(numero); // ¿Y aquí?
+     */
+
+    /**
+     * Ejercicio 2:
+     * let a = 5;
+     * {
+     *   let b = 10;
+     *   console.log(a, b); // ¿Qué valores muestra?
+     * }
+     * console.log(a, b); // ¿Y aquí?
+     */
+
+    /**
+     * Ejercicio 3:
+     * const x = 'externo';
+     * {
+     *   const x = 'interno';
+     *   console.log(x); // ¿Qué valor muestra?
+     * }
+     * console.log(x); // ¿Y aquí?
+     */
+
+    /**
+     * Ejercicio 4:
+     * let valor = 'global';
+     * {
+     *   console.log(valor); // ¿Qué valor muestra?
+     *   let valor = 'local';
+     * }
+     */
+
+    /**
+     * Ejercicio 5:
+     * let uno = 1;
+     * {
+     *   let dos = 2;
+     *   {
+     *     let tres = 3;
+     *     console.log(uno, dos, tres); // ¿Qué valores muestra?
+     *   }
+     *   console.log(uno, dos, tres); // ¿Y aquí?
+     * }
+     * console.log(uno, dos, tres); // ¿Y al final?
+     */
+
+    /**
+     * Ejercicio 6:
+     * let nivel1 = 'primer nivel';
+     * {
+     *   let nivel2 = 'segundo nivel';
+     *   {
+     *     let nivel3 = 'tercer nivel';
+     *     console.log(nivel1, nivel2, nivel3); // ¿Qué valores muestra?
+     *   }
+     *   console.log(nivel1, nivel2); // ¿Y aquí?
+     * }
+     * console.log(nivel1); // ¿Y al final?
+     */
+
+    /**
+     * Ejercicio 7:
+     * let a = 'a';
+     * {
+     *   let a = 'b';
+     *   {
+     *     let a = 'c';
+     *     console.log(a); // ¿Qué valor muestra?
+     *   }
+     *   console.log(a); // ¿Y aquí?
+     * }
+     * console.log(a); // ¿Y al final?
+     */
+
+    /**
+     * Ejercicio 8:
+     * let externa = 10;
+     * {
+     *   let interna = 20;
+     *   console.log(externa, interna); // ¿Qué valores muestra?
+     *   externa = 30;
+     *   console.log(externa, interna); // ¿Y ahora?
+     * }
+     * console.log(externa); // ¿Y al final?
+     */
+
+    /**
+     * Ejercicio 9:
+     * const variable = 'fuera';
+     * {
+     *   const variable = 'dentro';
+     *   {
+     *     console.log(variable); // ¿Qué valor muestra?
+     *   }
+     * }
+     * console.log(variable); // ¿Y al final?
+     */
+
+    /**
+     * Ejercicio 10:
+     * let numero = 5;
+     * {
+     *   let otroNumero = numero;
+     *   numero = 10;
+     *   console.log(otroNumero); // ¿Qué valor muestra?
+     * }
+     * console.log(numero); // ¿Y al final?
+     */
+
+  </script>
+</body>
+
+</html>
