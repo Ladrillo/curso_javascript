@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>34. Crear bucles for...in en arrays</title>
+</head>
+
+<body>
+  <h1>Capítulo 34</h1>
+  <h2>Crear bucles for...in en arrays</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo se pueden crear y utilizar funciones en JavaScript que procesen arrays, incluyendo arrays de objetos?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>El procesamiento de arrays, especialmente aquellos que contienen objetos, es una habilidad esencial
+      en JavaScript. Permite a los desarrolladores manejar colecciones de datos, realizar transformaciones,
+      y extraer información relevante de manera eficiente y efectiva.</p>
+  </section>
+  <script>
+    console.log('34. Crear bucles for...in en arrays');
+
+    /**
+     * Ejercicio 1: incrementarArray
+     * Crea una función que tome un array de números y un número como argumentos,
+     * y devuelva un nuevo array con cada elemento incrementado por el número dado.
+     */
+    function incrementarArray(array, incremento) {
+      // Implementación
+    }
+    console.log('Ejercicio 1', incrementarArray([1, 2, 3], 2)); // Debería imprimir [3, 4, 5]
+
+    /**
+     * Ejercicio 2: filtrarAdultos
+     * Crea una función que tome como argumento un array de objetos que representan personas
+     * (cada uno con propiedades 'nombre' y 'edad'), y devuelva un array con los nombres de
+     * las personas mayores de 18 años.
+     */
+    function filtrarAdultos(personas) {
+      // Implementación
+    }
+    console.log('Ejercicio 2', filtrarAdultos([
+      { nombre: 'Ana', edad: 20 },
+      { nombre: 'Luis', edad: 17 },
+    ])); // Debería imprimir ['Ana']
+
+    /**
+     * Ejercicio 3: contarOcurrencias
+     * Crea una función que tome un array de cadenas y una cadena como argumentos,
+     * y devuelva la cantidad de veces que la cadena aparece en el array.
+     */
+    function contarOcurrencias(array, cadena) {
+      // Implementación
+    }
+    console.log('Ejercicio 3', contarOcurrencias(['manzana', 'banana', 'manzana'], 'manzana')); // Debería imprimir 2
+
+    /**
+     * Ejercicio 4: productosAsequibles
+     * Crea una función que tome un array de productos (cada uno con propiedades 'nombre' y 'precio'),
+     * y un presupuesto como argumentos. La función debe devolver un array con los nombres de
+     * los productos que se pueden comprar con el presupuesto dado.
+     */
+    function productosAsequibles(productos, presupuesto) {
+      // Implementación
+    }
+    console.log('Ejercicio 4', productosAsequibles([
+      { nombre: 'Teclado', precio: 20 },
+      { nombre: 'Mouse', precio: 10 },
+    ], 15)); // Debería imprimir ['Mouse']
+
+    /**
+     * Ejercicio 5: encontrarMaximo
+     * Crea una función que tome un array de números y devuelva el mayor número del array.
+     */
+    function encontrarMaximo(array) {
+      // Implementación
+    }
+    console.log('Ejercicio 5', encontrarMaximo([1, 5, 3])); // Debería imprimir 5
+
+    /**
+     * Ejercicio 6: eliminarColor
+     * Crea una función que tome un array de colores (cadenas) y un color (cadena).
+     * La función debe devolver un array sin el color dado.
+     */
+    function eliminarColor(colores, color) {
+      // Implementación
+    }
+    console.log('Ejercicio 6', eliminarColor(['rojo', 'verde', 'azul'], 'verde')); // Debería imprimir ['rojo', 'azul']
+
+    /**
+     * Ejercicio 7: librosDeAutor
+     * Crea una función que tome un array de objetos que representan libros
+     * (cada uno con propiedades 'titulo' y 'autor'), y un autor. La función debe
+     * devolver un array con los títulos de todos los libros escritos por ese autor.
+     */
+    function librosDeAutor(libros, autor) {
+      // Implementación
+    }
+    console.log('Ejercicio 7', librosDeAutor([
+      { titulo: 'El Quijote', autor: 'Cervantes' },
+      { titulo: 'Ficciones', autor: 'Borges' },
+    ], 'Borges')); // Debería imprimir ['Ficciones']
+
+  </script>
+</body>
+
+</html>
