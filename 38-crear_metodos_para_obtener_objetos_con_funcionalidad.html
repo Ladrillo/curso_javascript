@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>38. Crear métodos para obtener objetos con funcionalidad</title>
+</head>
+
+<body>
+  <h1>Capítulo 38</h1>
+  <h2>Crear métodos para obtener objetos con funcionalidad</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo se crean y utilizan métodos en objetos de JavaScript para simular el comportamiento y propiedades de entidades del mundo real, como un coche?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>Los métodos en objetos de JavaScript permiten simular acciones y comportamientos de entidades del mundo real.
+      Por ejemplo, en un objeto "coche", se pueden implementar métodos para "conducir" o "repostar",
+      interactuando con sus propiedades como "cuentakilómetros" o "depósito". Esto es crucial para la programación
+      orientada a objetos, donde los objetos representan entidades con estado y comportamiento.</p>
+  </section>
+  <script>
+    console.log('38. Crear métodos para obtener objetos con funcionalidad')
+
+    /**
+     * Ejercicio 1: Crear un objeto "coche" con las propiedades
+     * "cuentakilometros" y "deposito" inicializados a 0.
+     */
+    let coche = {
+      // Implementar
+    };
+    console.log('Ejercicio 1:', coche.cuentakilometros === 0 && coche.deposito === 0 ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 2: Añadir al objeto "coche" un método "repostar"
+     * que incremente el "deposito" en una cantidad dada.
+     */
+    // Implementar método "repostar"
+    console.log('Ejercicio 2:', (coche.repostar(10), coche.deposito === 10) ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 3: Implementar el método "conducir" en "coche",
+     * que acepte una distancia y consuma 1 litro de gasolina por cada 10 km.
+     */
+    // Implementar método "conducir"
+    console.log('Ejercicio 3:', (coche.conducir(20), coche.cuentakilometros === 20 && coche.deposito === 8) ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 4: Agregar un método "estado" que muestre
+     * el estado actual del "cuentakilometros" y del "deposito".
+     */
+    // Implementar método "estado"
+    console.log('Ejercicio 4:', coche.estado() === 'Kilómetros: 20, Depósito: 8' ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 5: Crear un método "reiniciar" que ponga el
+     * "cuentakilometros" y el "deposito" a 0.
+     */
+    // Implementar método "reiniciar"
+    console.log('Ejercicio 5:', (coche.reiniciar(), coche.cuentakilometros === 0 && coche.deposito === 0) ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 6: Añadir una propiedad "marca" al objeto "coche" y
+     * un método "cambiarMarca" para cambiar su valor.
+     */
+    // Implementar propiedad "marca" y método "cambiarMarca"
+    console.log('Ejercicio 6:', (coche.cambiarMarca('Toyota'), coche.marca === 'Toyota') ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 7: Implementar un método "kilometrajeTotal" que devuelva
+     * el total de kilómetros recorridos por el coche.
+     */
+    // Implementar método "kilometrajeTotal"
+    console.log('Ejercicio 7:', (coche.conducir(100), coche.kilometrajeTotal() === 100) ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 8: Crear un método "esNecesarioRepostar" que indique
+     * si el depósito tiene menos de 5 litros.
+     */
+    // Implementar método "esNecesarioRepostar"
+    console.log('Ejercicio 8:', coche.esNecesarioRepostar() ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 9: Añadir una propiedad "año" al coche y un método
+     * "edadCoche" que calcule la edad del coche basándose en el año actual.
+     */
+    // Implementar propiedad "año" y método "edadCoche"
+    console.log('Ejercicio 9:', (coche.año = 2015, coche.edadCoche() === new Date().getFullYear() - 2015) ? 'Correcto' : 'Incorrecto');
+
+    /**
+     * Ejercicio 10: Implementar un método "kilometrosPorLitro" que
+     * calcule el rendimiento del coche en kilómetros por litro.
+     */
+    // Implementar método "kilometrosPorLitro"
+    console.log('Ejercicio 10:', coche.kilometrosPorLitro() === 10 ? 'Correcto' : 'Incorrecto');
+
+  </script>
+</body>
+
+</html>
