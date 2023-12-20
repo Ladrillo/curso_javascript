@@ -24,38 +24,86 @@
     console.log('39. Usar class para diseñar objetos con propiedades y métodos')
 
     /**
-     * Ejercicio 1: Define una clase `Vehiculo` con propiedades `marca`, `modelo` y `kilometraje` e implementa
-     * un método `mostrarInfo` que muestre la información del vehículo.
+     * Ejercicio 1: Refactoriza ejercicios viejos para usar la sintaxis class
     */
 
     /**
-     * Ejercicio 2: Crea una clase `Animal` con propiedades `especie`, `edad` y un método `hablar` que muestre un sonido.
-     * Crea instancias de diferentes animales y demuestra cómo cada uno puede tener su propio sonido.
-    */
-
-    /**
-     * Ejercicio 3: Desarrolla una clase `CuentaBancaria` con propiedades `titular` y `saldo`. Añade métodos `depositar` y
+     * Ejercicio 2: Desarrolla una clase `CuentaBancaria` con propiedades `titular` y `saldo`. Añade métodos `depositar` y
      * `retirar` que permitan modificar el saldo de la cuenta.
     */
 
     /**
-     * Ejercicio 4: Implementa una clase `Rectangulo` con propiedades `ancho` y `alto`. Incluye métodos para calcular el
+     * Ejercicio 3: Implementa una clase `Rectangulo` con propiedades `ancho` y `alto`. Incluye métodos para retornar el
      * área y el perímetro del rectángulo.
     */
 
     /**
-     * Ejercicio 5: Crea una clase `Estudiante` con propiedades `nombre`, `curso` y un array `notas`. Añade métodos para
-     * agregar notas y calcular la nota media del estudiante.
+     * Ejercicio 4: Crea una clase `Estudiante` con propiedades `nombre`, `curso` y un array `notas`. Añade métodos para
+     * agregar notas (que son números) y calcular la nota media del estudiante.
     */
 
     /**
-     * Ejercicio 6: Diseña una clase `Libreria` que almacene una colección de objetos `Libro`. Cada `Libro` tiene
-     * propiedades como `titulo`, `autor` y `año`. Incluye métodos para añadir libros y buscar libros por autor.
+     * Ejercicio 5: Diseña una clase `Libreria` capaz de almacenar libros. Cada libro sería un objecto con propiedades
+     * `titulo`, `autor` y `año`. Incluye un método para añadir un libro, y otro(s) para buscar libros por autor, título o año.
     */
 
     /**
-     * Ejercicio 7: Elabora una clase `Reloj` que muestre la hora actual. Utiliza el constructor para inicializar
-     * la hora y métodos para actualizar y mostrar la hora.
+     TRABAJO EN GRUPO: Diseña una clase `Tablero` que inicializa una `cuadricula` de 2 x 2.
+
+     REQUISITOS:
+
+     1- La cuadricula generada se representa como un array de arrays:
+     [
+      [,], // esto es la fila de arriba de la cuadricula
+      [,], // esto es la fila de abajo de la cuadricula
+     ]
+
+     2- Cada casilla de la cuadrícula contendrá un objeto
+     con una propiedad `activa` (con valor booleano):
+     [
+      [{activa:true} ,{activa:false}],
+      [{activa:false},{activa:false}],
+     ]
+
+     Fijaros en lo siguiente:
+        - Solo una casilla del tablero puede estar activa al mismo tiempo
+        - Al iniciar un tablero nuevo, la casilla activa es la de arriba a la izquierda
+
+    3- El tablero tendrá un método `casillaActiva` para retornar las coordenadas de la casilla
+    activa en la forma de un objeto con propiedades `x`, `y`. La `x` representa la coordenada
+    en el eje horizontal, y la `y` en el eje vertical:
+
+      {x:0,y:0} // si la casilla activa es la superior izquierda
+      {x:1,y:0} // si la casilla activa es la superior derecha
+      {x:0,y:1} // si la casilla activa es la inferior izquierda
+      {x:1,y:1} // si la casilla activa es la inferior derecha
+
+    4- Además, el `Tablero` tendrá cuatro métodos más: `arriba`, `abajo`, `izquierda`, `derecha`.
+
+    El uso de estos métodos cambia la casilla activa de una manera lógica: si la casilla activa
+    es la superior izquierda, no podemos ir ni mas arriba ni mas a la izquierda.
+
+    Si el movimiento es posible, moveremos la casilla activa y retornaremos las nuevas
+    coordenadas de la casilla activa en el mismo formato utilizado por el método `casillaActiva`.
+    Si no es posible, retornaremos la cadena "Imposible mover arriba" (o "abajo", "izquierda", etc)
+
+    EJEMPLO DE USO EN LA CONSOLA:
+
+    let tablero = new Tablero()
+    tablero.cuadricula      // evalua a [[{activa:true},{activa:false}],[{activa:false},{activa:false}]]
+    tablero.casillaActiva() // retorna {x:0,y:0}
+    tablero.derecha()       // retorna {x:1,y:0}
+    tablero.casillaActiva() // retorna {x:1,y:0}
+    tablero.derecha()       // retorna "Imposible mover derecha"
+    tablero.cuadricula      // evalua a [[{activa:false},{activa:true}],[{activa:false},{activa:false}]]
+
+    5- Si os ha resultado muy fácil, hacer los cambios necesarios para poder generar
+    tableros de cualquier tamaño.
+
+    EJEMPLO DE USO EN LA CONSOLA:
+
+    let tablero = new Tablero(5, 3) // genera un tablero de dimensiones 5 x 3
+
     */
   </script>
 </body>
