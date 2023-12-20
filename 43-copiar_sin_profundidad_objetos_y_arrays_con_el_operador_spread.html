@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>43. Copiar sin profundidad objetos y arrays con el operador spread</title>
+</head>
+
+<body>
+  <h1>Capítulo 43</h1>
+  <h2>Copiar sin profundidad objetos y arrays con el operador spread</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo se utiliza el operador spread para realizar copias superficiales de objetos y arrays en JavaScript?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>El operador spread (...) en JavaScript es una forma eficiente de copiar los elementos de un
+      objeto o array en otro nuevo. Esto es útil para crear copias rápidas y modificar o extender
+      estructuras de datos sin alterar los originales. Sin embargo, es importante recordar que
+      estas copias son superficiales y no clonan objetos anidados o subarrays de manera profunda.</p>
+  </section>
+  <script>
+    console.log('43. Copiar sin profundidad objetos y arrays con el operador spread')
+
+    /**
+     * Ejercicio 1: Copiar un array con spread
+     */
+    function copiarArray(arrayOriginal) {
+      // Implementar
+    }
+    let array1 = [1, 2, 3];
+    console.log('Ejercicio 1: copiarArray(array1) debe ser igual a [1, 2, 3]')
+    console.log('Resultado:', copiarArray(array1))
+
+    /**
+     * Ejercicio 2: Combinar dos arrays con spread
+     */
+    function combinarArrays(arr1, arr2) {
+      // Implementar
+    }
+    console.log('Ejercicio 2: combinarArrays([1, 2], [3, 4]) debe ser igual a [1, 2, 3, 4]')
+    console.log('Resultado:', combinarArrays([1, 2], [3, 4]))
+
+    /**
+     * Ejercicio 3: Copiar un objeto con spread
+     */
+    function copiarObjeto(objetoOriginal) {
+      // Implementar
+    }
+    let objeto = { a: 1, b: 2 };
+    console.log('Ejercicio 3: copiarObjeto(objeto) debe tener las mismas propiedades que objeto')
+    console.log('Resultado:', copiarObjeto(objeto))
+
+    /**
+     * Ejercicio 4: Combinar dos objetos con spread
+     */
+    function combinarObjetos(obj1, obj2) {
+      // Implementar
+    }
+    console.log('Ejercicio 4: combinarObjetos({ a: 1 }, { b: 2 }) debe ser igual a { a: 1, b: 2 }')
+    console.log('Resultado:', combinarObjetos({ a: 1 }, { b: 2 }))
+
+    /**
+     * Ejercicio 5: Añadir un elemento al principio de un array
+     */
+    function añadirAlInicio(arrayOriginal, elementoNuevo) {
+      // Implementar
+    }
+    console.log('Ejercicio 5: añadirAlInicio([2, 3, 4], 1) debe ser igual a [1, 2, 3, 4]')
+    console.log('Resultado:', añadirAlInicio([2, 3, 4], 1))
+
+    /**
+     * Ejercicio 6: Añadir un elemento al final de un array
+     */
+    function añadirAlFinal(arrayOriginal, elementoNuevo) {
+      // Implementar
+    }
+    console.log('Ejercicio 6: añadirAlFinal([1, 2, 3], 4) debe ser igual a [1, 2, 3, 4]')
+    console.log('Resultado:', añadirAlFinal([1, 2, 3], 4))
+
+    /**
+     * Ejercicio 7: Crear un nuevo objeto añadiendo una propiedad
+     */
+    function añadirPropiedad(objetoOriginal, clave, valor) {
+      // Implementar
+    }
+    console.log('Ejercicio 7: añadirPropiedad({ a: 1 }, "b", 2) debe ser igual a { a: 1, b: 2 }')
+    console.log('Resultado:', añadirPropiedad({ a: 1 }, "b", 2))
+
+    /**
+     * Ejercicio 8: Crear un nuevo objeto excluyendo una propiedad
+     * Utiliza desestructuración y spread
+     */
+    function excluirPropiedad(objetoOriginal, claveExcluida) {
+      // Implementar
+    }
+    console.log('Ejercicio 8: excluirPropiedad({ a: 1, b: 2 }, "a") debe ser igual a { b: 2 }')
+    console.log('Resultado:', excluirPropiedad({ a: 1, b: 2 }, "a"))
+
+    /**
+     * Ejercicio 9: Combinar arrays anidados con spread
+     */
+    function combinarArraysAnidados(arr1, arr2) {
+      // Implementar
+    }
+    console.log('Ejercicio 9: combinarArraysAnidados([1, [2, 3]], [4, [5, 6]]) debe ser igual a [1, [2, 3], 4, [5, 6]]')
+    console.log('Resultado:', combinarArraysAnidados([1, [2, 3]], [4, [5, 6]]))
+
+    /**
+     * Ejercicio 10: Extender un objeto con múltiples propiedades
+     */
+    function extenderObjeto(objetoOriginal, extensiones) {
+      // Implementar
+    }
+    console.log('Ejercicio 10: extenderObjeto({ a: 1 }, { b: 2, c: 3 }) debe ser igual a { a: 1, b: 2, c: 3 }')
+    console.log('Resultado:', extenderObjeto({ a: 1 }, { b: 2, c: 3 }))
+
+  </script>
+</body>
+
+</html>
