@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>44. Asignación Destructurada</title>
+</head>
+
+<body>
+  <h1>Capítulo 44</h1>
+  <h2>Asignación Destructurada</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo se utiliza la asignación destructurada en JavaScript para extraer valores de objetos o arrays?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>La asignación destructurada en JavaScript es una sintaxis que permite extraer valores de objetos o arrays
+      y asignarlos a variables de manera más limpia y legible. Esta técnica es especialmente útil para manejar
+      objetos con muchas propiedades o arrays complejos, facilitando la manipulación y acceso a datos específicos.</p>
+  </section>
+  <script>
+    console.log('44. Asignación Destructurada')
+
+    /**
+     * Ejercicio 1: Crear una función `extraerInfoUsuario` para extraer el nombre y el email
+     * de un objeto usuario y retornarlos en un objeto.
+     */
+    function extraerInfoUsuario(usuario) {
+      // Implementar
+    }
+    console.log('Ejercicio 1');
+    console.log('Valor esperado', { nombre: 'Ana', email: 'ana@example.com' });
+    console.log('Valor obtenido es', extraerInfoUsuario({ nombre: 'Ana', email: 'ana@example.com', edad: 25 }));
+
+    /**
+     * Ejercicio 2: Implementar la función `obtenerColoresPrimarios` para extraer los tres primeros elementos
+     * de un array de colores y devolver un objeto con las propiedades `primero`, `segundo`, `tercero`.
+     */
+    function obtenerColoresPrimarios(colores) {
+      // Implementar
+    }
+    console.log('Ejercicio 2');
+    console.log('Valor esperado', { primero: 'rojo', segundo: 'verde', tercero: 'azul' });
+    console.log('Valor obtenido es', obtenerColoresPrimarios(['rojo', 'verde', 'azul', 'amarillo']));
+
+    /**
+     * Ejercicio 3: Crear una función `configuracionUsuario` que extraiga las propiedades `idioma` y `tema`
+     * de un objeto de configuración y use valores por defecto si no están definidos.
+     */
+    function configuracionUsuario(config) {
+      // Implementar
+    }
+    console.log('Ejercicio 3');
+    console.log('Valor esperado', { idioma: 'es', tema: 'claro' });
+    console.log('Valor obtenido es', configuracionUsuario({ idioma: 'es' }));
+
+    /**
+     * Ejercicio 4: Implementar la función `desestructurarDireccion` para extraer la calle, ciudad y país
+     * de un objeto dirección y retornar un string formateado.
+     */
+    function desestructurarDireccion(direccion) {
+      // Implementar
+    }
+    console.log('Ejercicio 4');
+    console.log('Valor esperado', 'Calle Falsa 123, Springfield, USA');
+    console.log('Valor obtenido es', desestructurarDireccion({ calle: 'Calle Falsa 123', ciudad: 'Springfield', pais: 'USA' }));
+
+    /**
+     * Ejercicio 5: Crear una función `separarValores` que reciba un array con dos elementos y los retorne como dos variables separadas.
+     */
+    function separarValores(array) {
+      // Implementar
+    }
+    console.log('Ejercicio 5');
+    console.log('Valor esperado', '1 y 2');
+    console.log('Valor obtenido es', separarValores([1, 2]));
+
+    /**
+     * Ejercicio 6: Implementar la función `extraerDimensiones` para extraer ancho y alto de un objeto dimensiones y sumarlos.
+     */
+    function extraerDimensiones(dimensiones) {
+      // Implementar
+    }
+    console.log('Ejercicio 6');
+    console.log('Valor esperado', 30);
+    console.log('Valor obtenido es', extraerDimensiones({ ancho: 10, alto: 20 }));
+
+    /**
+     * Ejercicio 7: Crear una función `obtenerMaxMin` que reciba un objeto con propiedades `max` y `min` y retorne la diferencia.
+     */
+    function obtenerMaxMin(valores) {
+      // Implementar
+    }
+    console.log('Ejercicio 7');
+    console.log('Valor esperado', 5);
+    console.log('Valor obtenido es', obtenerMaxMin({ max: 10, min: 5 }));
+
+    /**
+     * Ejercicio 8: Implementar la función `extraerInformacionVehiculo` para extraer marca, modelo y año de un objeto vehículo.
+     */
+    function extraerInformacionVehiculo(vehiculo) {
+      // Implementar
+    }
+    console.log('Ejercicio 8');
+    console.log('Valor esperado', 'Toyota Corolla 2020');
+    console.log('Valor obtenido es', extraerInformacionVehiculo({ marca: 'Toyota', modelo: 'Corolla', año: 2020 }));
+
+    /**
+     * Ejercicio 9: Crear una función `dividirArray` que reciba un array y use destructuración para dividirlo en dos arrays.
+     */
+    function dividirArray(array) {
+      // Implementar
+    }
+    console.log('Ejercicio 9');
+    console.log('Valor esperado', 'Primer parte: 1,2 - Segunda parte: 3,4');
+    console.log('Valor obtenido es', dividirArray([1, 2, 3, 4]));
+
+    /**
+     * Ejercicio 10: Implementar la función `crearPerfilUsuario` para extraer nombre y edad de un objeto y retornar un mensaje personalizado.
+     */
+    function crearPerfilUsuario(usuario) {
+      // Implementar
+    }
+    console.log('Ejercicio 10');
+    console.log('Valor esperado', 'Hola, soy Ana y tengo 25 años');
+    console.log('Valor obtenido es', crearPerfilUsuario({ nombre: 'Ana', edad: 25 }));
+  </script>
+</body>
+
+</html>
