@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>47. Entender el código asíncrono, los callbacks y las promesas</title>
+</head>
+
+<body>
+  <h1>Capítulo 47</h1>
+  <h2>Entender el código asíncrono, los callbacks y las promesas</h2>
+  <section>
+    <h3>Input ChatGPT</h3>
+    <p>¿Cómo manejar funciones que retornan promesas en JavaScript, utilizando .then/.catch y async/await?</p>
+  </section>
+  <section>
+    <h3>Para qué sirve</h3>
+    <p>Manejar promesas es esencial en JavaScript para realizar tareas asíncronas, como solicitudes de red,
+      operaciones que llevan tiempo, o simplemente para ejecutar código que depende de otro que aún no ha terminado.
+      Aprender a manejar promesas correctamente permite escribir código asíncrono de manera eficiente y segura.</p>
+  </section>
+  <script>
+    console.log('47. Entender el código asíncrono, los callbacks y las promesas');
+
+    // Ejercicios
+
+    /**
+     * Ejercicio 1: Utilizar .then y .catch para manejar esta promesa
+     * Función que simula una operación asíncrona exitosa
+     */
+    function operacionExitosa() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve("Éxito"), 1000);
+      });
+    }
+
+    /**
+     * Ejercicio 2: Utilizar async/await para manejar esta promesa
+     * Función que simula una operación asíncrona que falla
+     */
+    function operacionFallida() {
+      return new Promise((_, reject) => {
+        setTimeout(() => reject(new Error("Falló")), 1000);
+      });
+    }
+
+    /**
+     * Ejercicio 3: Manejar una promesa con múltiples .then
+     * Función que retorna una promesa con múltiples valores
+     */
+    function valoresMultiples() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(5), 1000);
+      }).then(valor => valor * 2)
+        .then(valor => valor + 3);
+    }
+
+    /**
+     * Ejercicio 4: Encadenar promesas con .then
+     * Función que simula una secuencia de operaciones asíncronas
+     */
+    function secuenciaAsincrona() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(1), 500);
+      }).then(valor => valor + 1)
+        .then(valor => new Promise(resolve => setTimeout(() => resolve(valor + 1), 500)));
+    }
+
+    /**
+     * Ejercicio 5: Manejar errores con .catch en una cadena de promesas
+     * Función que simula una operación que puede fallar
+     */
+    function operacionRiesgosa() {
+      return new Promise((resolve, reject) => {
+        const exito = Math.random() > 0.5;
+        setTimeout(() => exito ? resolve("Éxito") : reject(new Error("Falló")), 1000);
+      });
+    }
+
+  </script>
+</body>
+
+</html>
